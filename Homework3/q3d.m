@@ -34,6 +34,7 @@ outputRadial = svmclassify(classifier, test_data);
 %error rate.
 
 guessedLabels = outputLinear + test_labels;
+test_labels
 errorRateLinear = 1 - (nnz(guessedLabels) ./ size(test_labels,1))
 
 guessedLabels = outputPoly + test_labels;
